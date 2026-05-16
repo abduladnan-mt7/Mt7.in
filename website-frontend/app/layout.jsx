@@ -1,10 +1,14 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import GlobalBackground from "./../components/mainBackground/GlobalBackground";
+import dynamic from 'next/dynamic';
 import Script from "next/script";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import ClientLayout from "./ClientLayout";
+
+const GlobalBackground = dynamic(() => import("./../components/mainBackground/GlobalBackground"), { 
+  ssr: false 
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
