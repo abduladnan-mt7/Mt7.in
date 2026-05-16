@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { AnimatePresence } from "framer-motion";
 import LoadingScreen from "../components/mainBackground/LoadingScreen";
+import GlobalBackground from "../components/mainBackground/GlobalBackground";
 
 export default function ClientLayout({ children }) {
   const [loading, setLoading] = useState(true);
@@ -29,6 +30,7 @@ export default function ClientLayout({ children }) {
       <AnimatePresence mode="wait">
         {loading && <LoadingScreen />}
       </AnimatePresence>
+      <GlobalBackground />
       {children}
     </>
   );

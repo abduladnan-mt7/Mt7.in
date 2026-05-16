@@ -6,10 +6,6 @@ import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import ClientLayout from "./ClientLayout";
 
-const GlobalBackground = dynamic(() => import("./../components/mainBackground/GlobalBackground"), { 
-  ssr: false 
-});
-
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -44,12 +40,9 @@ export default function RootLayout({ children }) {
           `}
         </Script>
       </head>
-
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased relative bg-black text-white`}
       >
-        <GlobalBackground />
-
         <main className="relative z-10">
           <ClientLayout>
             {children}
