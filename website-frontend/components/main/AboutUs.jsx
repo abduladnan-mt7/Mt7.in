@@ -120,8 +120,9 @@ const AboutSection = () => {
             </div>
 
             <p className={`${montserrat.className} text-zinc-200 text-sm leading-relaxed mb-6 font-medium`}>
-              Mt7 is not an agency or a marketplace. We are a business
-              operations system acting as your single operational manager.
+              We are not just a platform; we are your dedicated operations partner. Operating from our physical headquarters with a full in-house team of experts, we deliver core Tech, Finance, and HR services directly under our own roof. 
+              <br /><br />
+              By combining our in-house excellence with a globally vetted network of agencies, we offer the security of a local team with the unlimited scalability of a digital network. One point of contact, total accountability, and zero overhead for you.
             </p>
 
             <div className="space-y-3">
