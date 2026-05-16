@@ -72,9 +72,7 @@ export default function HeroSection() {
             <p
               className={`${montserrat.className} text-lg text-zinc-100 font-light leading-relaxed mb-10 max-w-xl`}
             >
-              We find, vet, and manage all your Marketing, Finance & HR
-              agencies— so you get professional operations without the
-              headaches. One point of contact. One invoice. Zero vendor drama.
+              We are your dedicated operations partner. With a full in-house team of Tech, Finance, and HR experts working from our physical headquarters, we handle your core business while managing our elite agency network for everything else.
             </p>
 
             <div className="flex flex-col gap-6 mb-12">

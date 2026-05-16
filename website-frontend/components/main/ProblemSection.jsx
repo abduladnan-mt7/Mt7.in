@@ -24,12 +24,12 @@ const painPoints = [
   },
   {
     icon: <ShieldAlert className="w-8 h-8" aria-hidden="true" />,
-    title: "QUALITY COMPROMISE",
+    title: "GHOST AGENCIES",
     lines: [
-      "Paying premium for junior-level",
-      "work and generic templates.",
-      "Endless rounds of revisions",
-      "that never quite hit the mark.",
+      "No physical office, no real team.",
+      "Your project is outsourced to",
+      "random freelancers you never meet.",
+      "Zero accountability when things fail.",
     ],
   },
   {
