@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+/* We remove the background variables that force solid colors */
+:root {
+  --foreground: #ededed;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  /* This is the fix: body must be transparent */
+  background: transparent !important; 
+  color: var(--foreground);
+  overflow-x: hidden;
+}
+
+/* Ensure the HTML tag has the dark base color so there's no white flash */
+html {
+  background-color: #050202;
+}
