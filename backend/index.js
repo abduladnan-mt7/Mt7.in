@@ -26,6 +26,11 @@ app.use("/api/agency-profile", agencyProfileRoutes);
 app.use("/api/match", matchRoutes);
 app.use("/api/users", userRoutes);
 
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
-});
+// Export for Vercel
+export default app;
+
+if (process.env.NODE_ENV !== "production") {
+  app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
+  });
+}
