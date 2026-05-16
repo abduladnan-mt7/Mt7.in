@@ -1,9 +1,14 @@
 "use client";
 
 import React from "react";
-import Hero3D from "@/components/main/Hero3D";
+import dynamic from 'next/dynamic';
 import Navbar from "@/components/main/Navbar";
 import Footer from "@/components/main/Footer";
+
+const Hero3D = dynamic(() => import("@/components/main/Hero3D"), { 
+  ssr: false,
+  loading: () => <div className="h-screen w-full bg-black flex items-center justify-center text-white">Loading 3D Experience...</div>
+});
 
 export default function AlternativePage() {
   return (
